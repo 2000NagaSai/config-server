@@ -10,3 +10,18 @@ Eureka:
       defaultZone: http://localhost:8761/eureka/
     instance:
       hostname: localhost  
+      
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    dbcp2.driverClassName: org.h2.driver
+    username: sa
+    password: 
+    
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    
+  h2:
+    console:
+      enabled: true
